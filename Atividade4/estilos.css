@@ -1,0 +1,49 @@
+body{
+	background-image: url(imagens/sorocaba.jpg);
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+}
+
+header{
+	text-align: center;
+	color: #7E9F35;
+	text-decoration: none;
+}
+
+
+section {
+    float: left;
+    width: 660px;
+}
+
+article {
+    float: right;
+    width: 660px;
+    background-color: skyblue;
+}
+
+article img {
+    border: 1px solid #7E9F19;
+    float: left;
+    margin: 10px 10px 0 0;
+    padding: 2px;
+    width: 160px;
+    height: 160px;
+}
+
+aside {
+    background-color: skyblue;
+    border: 1px solid #C9BC8F;
+    padding: 10px;
+    float: right;
+    width: 260px;
+}
+
+footer{
+	font-size: 16px;
+	text-align: center;
+	color: black;
+}
+
+.clear{
+	clear: both;
+}
