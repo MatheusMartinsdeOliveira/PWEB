@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Pesquisa </title>
+	</head>
+	<body>
+		<script>
+			var pesquisaIdade = ['10','30','20','25','33'];
+			var pesquisaSexo = ['M','F','M','F'.'M'];
+			let pesquisaOp = ['1','2','4','1','2'];
+			var aux;
+			var media;
+			var pessoaVelha=0;
+			var pessoaNova=0;
+			var opiniaoPessimo;
+			var porcenBomOtimo;
+			var aux2;
+			var numMulheres;
+			var numHomens;
+			var i;
+
+			
+			for(i=0;i<5;i++){
+				if (pesquisaIdade[i] < pessoaNova) {
+					pessoaNova = pesquisaIdade[i];
+				}
+				if(pesquisaIdade[i] > pessoaVelha) {
+					pessoaVelha = pesquisaIdade[i];
+				}
+				aux += pesquisaIdade[i];
+			}
+			media = aux/5;
+
+			for(i=0;i<5;i++) {
+				if (pesquisaOp[i] === 1) {
+					opiniaoPessimo += 1;
+				}
+
+				if (pesquisaOp[i] === 4 || pesquisaOp[i] === 3) {
+					aux2 += 1;
+				}
+			}
+
+			for (i=0;i<5;i++){
+				if(pesquisaSexo==M){
+					numHomens += 1;
+				}
+				else{
+					numMulheres += 1;
+				}
+			}
+
+			console.log("Média:" +media + "Mais velha:" +pessoaVelha + "Mais nova:" +pessoaNova + "Responderam Péssimo:" +opiniaoPessimo + "Porcentagem bom e ótimo:" +porcenBomOtimo + "Número de mulheres:" +numMulheres + "Número de homens:" +numHomens);
+		</script>
+	</body>
+</html>
