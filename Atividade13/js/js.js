@@ -1,16 +1,12 @@
-function tamanhoLetras() {
+function alterarTamanho() {
+  var checkMai = document.getElementById('checkMaiusculo');
+  var checkMin = document.getElementById('checkMinusculo');
 
-	if (document.forms.formulario1.elements["checkMaiusculo"])
-		{
-			document.forms.formulario1.elements.idText.toUpperCase(idText);
-			return false;
-		};
+  if(checkMai.checked){
+    document.getElementById('texto').value = document.forms.form1.elements.texto.value.toUpperCase();
+  }
+  if(checkMin.checked){
+    document.getElementById('texto').value = document.forms.form1.elements.texto.value.toLowerCase();
+  }
 
-
-	if (document.forms.formulario1.elements["checkMinusculo"].value == "checkminusculo")
-		{
-			document.forms.formulario1.elements.idText.toLowerCase(idText);
-			return false;
-		};
-return true;
 }

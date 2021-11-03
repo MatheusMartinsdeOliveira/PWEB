@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="utf-8">
-		<title> Atividade 13 </title>
-	</head>
-	<body>
-		<form name="formulario1" onsubmit="return tamanhoLetras();">
-			Insira um texto:
-			<input type="text" name="idText" id="idText">
-			<br>
-			<br>
-			MAIÚSCULO: <input type="checkbox" name="checkMaiusculo" id="checkMaiusculo">
-			<br>
-			minúsculo: <input type="checkbox" name="checkMinusculo" id="checkMinusculo">
-			<br>
-			<input name="Submit" type="submit" form="formulario1" value="Submit">
+ 	<head>
+    <meta charset="utf-8">
+    <title> Alterar tamanho </title>
+  </head>
 
+  <body onclick="alterarTamanho()">
 
-		</form>
-	</body>
-	<script src="js/js.js"></script>
+    <form name="form1" action="index.html" method="post">
+      <label>Insira um texto aqui:</label>
+      <input  type="text" name="texto" id="texto">
+      <br>
+      <br>
+      <label>Maiusculo: </label>
+      <input type="checkbox" id="checkMaiusculo"/>
+
+      <label>Minusculo: </label>
+      <input type="checkbox" id="checkMinusculo"/>
+
+    </form>
+
+  </body>
+
+  <script src="js/js.js" charset="utf-8"></script>
+
 </html>
