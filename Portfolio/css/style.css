@@ -1,0 +1,83 @@
+body{
+	font-size: 1.2em;
+	font-weight: "Trebuchet MS" Helvetica, sans-serif;
+	background-image: url("https://images.alphacoders.com/307/thumb-1920-307471.jpg");
+}
+
+/*
+******* LAYOUT ********
+*/
+
+#cabecalho{
+	background-image: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77702110654.jpg);
+	/***background-color: #000000;****/
+	padding: 20px;
+	text-align: center;
+}
+
+#menu{
+	padding: 20px;
+}
+
+/****
+#principal{
+	background-color: #3399FF;
+	width: 550px;
+	float: left;
+	height: 620px;
+}
+****/
+
+.centro{
+	text-align: center;
+	border: 2px inset ;
+}
+
+/*
+******** Formatação dos botões *********
+*/
+a{
+	text-decoration: none;
+
+}
+
+#cabecalho a:link, a:visited{
+	color: #000000;
+	padding: 8px 12px;
+}
+
+a:hover {
+	background: #f6f899;
+}
+
+#cabecalho a:hover {
+	color:  #000000;
+	background: #f6f899;
+	text-decoration: none;
+}
+
+/*************
+			Imagens
+					****************/
+#tamanhoImagem{
+	width: 40px;
+	height: 40px;
+	border: 2px #f6f899 solid;
+}
+
+hr{
+	color: skyblue;
+}
+
+#conteudo {
+	text-align: center;
+	background-image: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77702110654.jpg);
+	/****background-color: #6a9de3;****/
+}
+#rodape {
+	clear: both;
+	text-align: center;
+	padding: 15px;
+	/*****background: #6a9de3;*****/
+	background-image: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77702110654.jpg);
+}
